@@ -1,19 +1,5 @@
-// "use client"
-
-
-// import { useRecoilValue } from "recoil";
-import Trycomp from "./components/try";
-// import { tryatom } from "./Store/try";
-
-export default function Home() {
-
-  // const val = useRecoilValue(tryatom)
-  return (
-    <div className="h-screen pt-14">
-      get started
-      <Trycomp />
-
-      {/* you have rs : {val} */}
-    </div>
-  );
+export default function Home(){
+    return(<div className="pt-14 h-96 w-full flex justify-center items-center">
+        welcome home
+    </div>)
 }

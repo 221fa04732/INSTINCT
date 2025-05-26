@@ -8,7 +8,7 @@ type routetype ={
 const route : routetype[] = [
     {
         name : "Home",
-        route : "/home"
+        route : "/"
     },{
         name : "AboutUs",
         route : "/aboutUs"
@@ -23,8 +23,8 @@ export default function Header(){
         <div className="flex justify-between items-center w-11/12">
             <img src="./logo.webp" alt="logo" />
             <div className='flex gap-4'>
-                {route.map((items)=>(
-                    <div><Link href={items.route}>{items.name}</Link></div>
+                {route.map((items, index)=>(
+                    <div key={index}><Link href={items.route}>{items.name}</Link></div>
                 ))}
             </div>
             {/* header tab routing  -- todo  */}
