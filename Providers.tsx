@@ -1,37 +1,18 @@
 "use client"
 
+import {ClerkProvider} from '@clerk/nextjs'
 import { RecoilRoot } from "recoil";
-import {
-  ClerkProvider,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from '@clerk/nextjs'
+import Footer from "./app/components/Footer";
+import Header from './app/components/Header';
 
 export default function Providers({children} : {
     children : React.ReactNode
 }){
     return(<RecoilRoot >
         <ClerkProvider>
-            <header className="h-16 w-full flex justify-center">
-                <div className="flex justify-between items-center w-11/12">
-                    <img src="./logo.webp" alt="logo" />
-                    {/* header tab routing  -- todo  */}
-                    <div className="flex gap-4">
-                        {/* light dark mode -- todo */}
-                        <SignedOut>
-                            <SignInButton />
-                            <SignUpButton />
-                        </SignedOut>
-                        <SignedIn>
-                            <UserButton />
-                        </SignedIn>
-                    </div>
-                </div>
-            </header>
+            <Header />
             {children}
+            <Footer />
         </ClerkProvider>
     </RecoilRoot>
 )}
