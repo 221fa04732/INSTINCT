@@ -19,17 +19,15 @@ const route : routetype[] = [
 ]
 
 export default function Header(){
-    return(<header className="h-16 w-full flex justify-center fixed">
-        <div className="flex justify-between items-center w-11/12">
+    return(<header className="h-16 w-full flex justify-center fixed top-6 z-50">
+        <div className="flex justify-between items-center w-11/12 rounded-lg px-6 border border-slate-900 backdrop-blur-2xl">
             <img src="./logo.webp" alt="logo" />
             <div className='flex gap-4'>
                 {route.map((items, index)=>(
                     <div key={index}><Link href={items.route}>{items.name}</Link></div>
                 ))}
             </div>
-            {/* header tab routing  -- todo  */}
             <div className="flex gap-4">
-                {/* light dark mode -- todo */}
                 <SignedOut>
                     <SignInButton />
                 </SignedOut>

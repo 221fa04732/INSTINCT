@@ -20,8 +20,7 @@
 }
 
 body {
-  background-color: #1e1e2f;
-  background-image: radial-gradient(circle, #1e1e2f 0%, #000000 100%);
+  background-image: url("/star.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
