@@ -11,10 +11,10 @@ const route : routetype[] = [
         route : "/"
     },{
         name : "AboutUs",
-        route : "/aboutUs"
+        route : "/aboutus"
     },{
         name : "ContactUs",
-        route : "/contactUs"
+        route : "/contactus"
     }
 ]
 
