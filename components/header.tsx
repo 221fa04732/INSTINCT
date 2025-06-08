@@ -24,7 +24,7 @@ export default function Header(){
             <img src="./logo.webp" alt="logo" />
             <div className='flex gap-4'>
                 {route.map((items, index)=>(
-                    <div key={index}><Link href={items.route}>{items.name}</Link></div>
+                    <Link href={items.route} key={index}>{items.name}</Link>
                 ))}
             </div>
             <div className="flex gap-4">
