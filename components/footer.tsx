@@ -1,5 +1,39 @@
 export default function Footer(){
-    return(<div className="h-96 w-full flex justify-center items-center">
-        Footer
+    return(<div className="bg-neutral-950 relative flex justify-center items-center">
+        <div className="absolute w-8/12 -top-10 z-10 rounded-full grid grid-col-1 md:grid-cols-2 place-content-center gap-4 p-6 shadow" style={{ backgroundImage: "radial-gradient(circle farthest-corner at -24.7% -47.3%, rgba(6,130,165,1) 0%, rgba(34,48,86,1) 66.8%, rgba(15,23,42,1) 100.2%)"}}>
+            <span className="flex justify-center items-center">Follow our newletter ?</span>
+            <input type="text" placeholder="example@gmail.com" className="rounded-full bg-neutral-800 border border-neutral-950 px-4 py-2 "/>
+        </div>
+        <div className="w-full flex flex-col justify-center items-center text-lg font-semibold text-white absolute top-0 -z-10" style={{ backgroundImage: "radial-gradient(circle farthest-corner at -24.7% -47.3%, rgba(6,130,165,1) 0%, rgba(34,48,86,1) 66.8%, rgba(15,23,42,1) 100.2%)"}}>
+            <div className="w-10/12 flex flex-col justify-center items-center pt-28 md:pt-20 pb-6">
+                <div className="w-full grid grid-cols-1 md:grid-cols-3 place-content-between">
+                    <div className="flex flex-col justify-center items-center md:items-start mb-6 md:mb-0">
+                        <img src="./logo.webp" />
+                    </div>
+                    <div className="flex flex-col justify-center items-center md:items-start">
+                        <span className="hover:text-neutral-900 cursor-pointer">Links</span>
+                        <span className="hover:text-neutral-900 cursor-pointer">App</span>
+                        <span className="hover:text-neutral-900 cursor-pointer">Report</span>
+                    </div>
+                    <div className="flex flex-col justify-center items-center md:items-start">
+                        <span className="hover:text-neutral-900 cursor-pointer">Legal</span>
+                        <span className="hover:text-neutral-900 cursor-pointer">Terms & Conditions</span>
+                        <span className="hover:text-neutral-900 cursor-pointer">Privacy Policy</span>
+                    </div>
+                </div>
+                <div className="w-full flex flex-col items-center md:items-start pt-6 pb-12">
+                    <div>
+                        Follow us
+                    </div>
+                    <div className="w-full flex justify-center md:justify-start items-center gap-2">
+                        <a href="https://x.com/" target="_blank"><img src="./twitter.png" className="max-h-6 max-w-6" /></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./instagram.png" className="max-h-6 max-w-6" /></a>
+                        <a href="https://www.linkedin.com/company/instinct-space/" target="_blank"><img src="./linkedin.png" className="max-h-6 max-w-6" /></a>
+                        <a href="https://www.youtube.com/@InstinctSpace/" target="_blank"><img src="./youtube.png" className="max-h-6 max-w-6" /></a>
+                    </div>
+                </div>
+                <div className="w-full flex justify-center items-center text-xs">© 2025 Instinct - All right reserved</div>
+            </div>
+        </div>
     </div>)
 }

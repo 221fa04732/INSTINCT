@@ -1,6 +1,6 @@
 export default function Landing(){
     return (<div className=" w-full flex flex-col justify-center items-center md:mt-40 mt-0">
-        <div className="relative bg-transparent h-screen w-screen">
+        <div className="relative bg-transparent h-screen w-full">
             <img src="./background1.svg" className="absolute bottom-0 right-0 -z-10 w-full objecct-contain"/>
             <div className="absolute md:-top-40 top-0 w-full grid grid-cols-2 -z-10">
                 <img src="./background2.svg" className="w-full object-contain"/>
