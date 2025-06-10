@@ -12,6 +12,9 @@ const route : routetype[] = [
         "name" : "Home",
         "route" : "/"
     },{
+        "name" : "Blog",
+        "route" : '/blog'
+    },{
         "name" : "AboutUs",
         "route" : "/about"
     },{
@@ -29,11 +32,9 @@ export default function Header(){
                     <div key={index}><Link href={items.route} className='text-white hover:text-blue-600 hover:underline'>{items.name}</Link></div>
                 ))}
             </div>
-
             <div className='md:hidden'>
                 <Dropdown route={route} />
-            </div>
-                
+            </div>    
             <div>
                 <SignedOut>
                     <SignInButton />
