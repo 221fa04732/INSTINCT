@@ -28,6 +28,7 @@ export default function Header(){
                 ))}
             </div> */}
             <Link href={"/aboutus"}>aboutus</Link>
+            <Link href={"/try"}>Try</Link>
             <div className="flex gap-4">
                 <SignedOut>
                     <SignInButton />
