@@ -2,19 +2,19 @@ import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import Link from 'next/link'
 
 type routetype ={
-    name : string,
-    route : string
+    "name" : string,
+    "route" : string
 }
 const route : routetype[] = [
     {
-        name : "Home",
-        route : "/"
+        "name" : "Home",
+        "route" : "/"
     },{
-        name : "AboutUs",
-        route : "/aboutus"
+        "name" : "AboutUs",
+        "route" : "/aboutus"
     },{
-        name : "ContactUs",
-        route : "/contactus"
+        "name" : "ContactUs",
+        "route" : "/contactus"
     }
 ]
 
@@ -22,11 +22,12 @@ export default function Header(){
     return(<header className="h-16 w-full flex justify-center fixed top-6 z-50">
         <div className="flex justify-between items-center w-11/12 rounded-lg px-6 border border-slate-900 backdrop-blur-2xl">
             <img src="./logo.webp" alt="logo" />
-            <div className='flex gap-4'>
+            {/* <div className='flex gap-4'>
                 {route.map((items, index)=>(
-                    <Link href={items.route} key={index}>{items.name}</Link>
+                    <div key={index}><Link href={items.route} >{items.name}</Link></div>
                 ))}
-            </div>
+            </div> */}
+            <Link href={"/aboutus"}>aboutus</Link>
             <div className="flex gap-4">
                 <SignedOut>
                     <SignInButton />
