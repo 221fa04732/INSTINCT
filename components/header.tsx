@@ -11,10 +11,10 @@ const route : routetype[] = [
         "route" : "/"
     },{
         "name" : "AboutUs",
-        "route" : "/aboutus"
+        "route" : "/about"
     },{
         "name" : "ContactUs",
-        "route" : "/contactus"
+        "route" : "/contact"
     }
 ]
 
@@ -22,13 +22,11 @@ export default function Header(){
     return(<header className="h-16 w-full flex justify-center fixed top-6 z-50">
         <div className="flex justify-between items-center w-11/12 rounded-lg px-6 border border-slate-900 backdrop-blur-2xl">
             <img src="./logo.webp" alt="logo" />
-            {/* <div className='flex gap-4'>
+            <div className='flex gap-4'>
                 {route.map((items, index)=>(
                     <div key={index}><Link href={items.route} >{items.name}</Link></div>
                 ))}
-            </div> */}
-            <Link href={"/aboutus"}>aboutus</Link>
-            <Link href={"/try"}>Try</Link>
+            </div>
             <div className="flex gap-4">
                 <SignedOut>
                     <SignInButton />
