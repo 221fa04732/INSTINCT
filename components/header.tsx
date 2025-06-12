@@ -37,7 +37,9 @@ export default function Header(){
             </div>    
             <div>
                 <SignedOut>
-                    <SignInButton />
+                    <div className='bg-neutral-700 hover:bg-neutral-600 text-white rounded-sm px-4 py-1'>
+                        <SignInButton />
+                    </div>
                 </SignedOut>
                 <SignedIn>
                     <UserButton />
