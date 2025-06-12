@@ -8,6 +8,7 @@ import {
   useMotionValue,
   useSpring,
 } from "motion/react";
+import Image from "next/image";
 
 export const Tooltip = ({
   items,
@@ -77,10 +78,10 @@ export const Tooltip = ({
               </motion.div>
             )}
           </AnimatePresence>
-          <img
+          <Image
             onMouseMove={handleMouseMove}
-            height={100}
-            width={100}
+            height={50}
+            width={50}
             src={item.image}
             alt={item.name}
             className="relative !m-0 h-10 w-10 rounded-full border-2 border-white object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105"

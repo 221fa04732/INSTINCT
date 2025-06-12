@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -81,7 +82,7 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]",
         )}>
         {items.map((item, index) => (
-          <img src={item} key={index} className="max-h-12"/>
+          <Image src={item} alt="company" height={200} width={200} key={index} className="max-h-12"/>
         ))}
       </ul>
     </div>

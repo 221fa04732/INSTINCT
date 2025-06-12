@@ -12,9 +12,9 @@ export function CompanyCard() {
 }
 
 const image : string[] =[
-    "./ycombinator.webp",
-    "./calm.webp",
-    "./maiora.webp",
-    "./a16z.webp",
-    "./rebel.webp"
+    "/ycombinator.webp",
+    "/calm.webp",
+    "/maiora.webp",
+    "/a16z.webp",
+    "/rebel.webp"
 ];

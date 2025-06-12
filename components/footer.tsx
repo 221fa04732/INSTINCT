@@ -1,5 +1,6 @@
 import { Input } from "./ui/input"
 import { Button } from "./ui/button"
+import Image from "next/image"
 
 export default function Footer(){
     return(<div className="bg-neutral-950 relative flex justify-center items-center">
@@ -16,7 +17,7 @@ export default function Footer(){
             <div className="w-10/12 flex flex-col justify-center items-center pt-20 pb-6">
                 <div className="w-full grid grid-cols-1 md:grid-cols-3 place-content-between">
                     <div className="flex flex-col justify-center items-center md:items-start mb-6 md:mb-0">
-                        <img src="./logo.webp" />
+                        <Image src="/logo.webp" alt="logo" height={100} width={100} />
                     </div>
                     <div className="flex flex-col justify-center items-center md:items-start">
                         <span className="hover:text-neutral-900 cursor-pointer">Links</span>
@@ -34,10 +35,10 @@ export default function Footer(){
                         Follow us
                     </div>
                     <div className="w-full flex justify-center md:justify-start items-end gap-2">
-                        <a href="https://www.instagram.com/" target="_blank"><img src="./instagram.png" className="max-h-5 max-w-5" /></a>
-                        <a href="https://x.com/" target="_blank"><img src="./twitter.png" className="max-h-5 max-w-5" /></a>
-                        <a href="https://www.youtube.com/@InstinctSpace/" target="_blank"><img src="./youtube.png" className="max-h-6 max-w-6" /></a>
-                        <a href="https://www.linkedin.com/company/instinct-space/" target="_blank"><img src="./linkedin.png" className="max-h-6 max-w-6" /></a>
+                        <a href="https://www.instagram.com/" target="_blank"><Image src="/instagram.png" alt="instagram" height={50} width={50} className="max-h-5 max-w-5" /></a>
+                        <a href="https://x.com/" target="_blank"><Image src="/twitter.png" alt="twitter" height={50} width={50} className="max-h-5 max-w-5" /></a>
+                        <a href="https://www.youtube.com/@InstinctSpace/" target="_blank"><Image src="/youtube.png" alt="youtube" height={50} width={50} className="max-h-6 max-w-6" /></a>
+                        <a href="https://www.linkedin.com/company/instinct-space/" target="_blank"><Image src="/linkedin.png" alt="linkedin" height={50} width={50} className="max-h-6 max-w-6" /></a>
                     </div>
                 </div>
                 <div className="w-full flex justify-center items-center text-xs">© 2025 Instinct - All right reserved</div>

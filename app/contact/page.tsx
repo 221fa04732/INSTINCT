@@ -3,13 +3,14 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
+import Image from 'next/image'
 
 export default function ContactUs(){
     return(<div className='bg-slate-950 text-white w-full pt-32'>
         <div className="w-full flex justify-center items-center pb-32">
             <div className="w-10/12 grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div className='flex flex-col justify-center items-start gap-4'>
-                    <img src="./contact.png" alt="" className='max-h-40 lg:max-h-96' />
+                    <img src="/contact.png" alt="contact" className='max-h-40 lg:max-h-96' />
                 </div>
                 <div className='flex flex-col justify-center items-start gap-4'>
                     <div className='font-extrabold text-3xl lg:text-5xl'>Have a Query? We are here to help</div>
