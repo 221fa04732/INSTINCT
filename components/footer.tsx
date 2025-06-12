@@ -33,11 +33,11 @@ export default function Footer(){
                     <div>
                         Follow us
                     </div>
-                    <div className="w-full flex justify-center md:justify-start items-center gap-2">
-                        <a href="https://x.com/" target="_blank"><img src="./twitter.png" className="max-h-6 max-w-6" /></a>
-                        <a href="https://www.instagram.com/" target="_blank"><img src="./instagram.png" className="max-h-6 max-w-6" /></a>
-                        <a href="https://www.linkedin.com/company/instinct-space/" target="_blank"><img src="./linkedin.png" className="max-h-6 max-w-6" /></a>
+                    <div className="w-full flex justify-center md:justify-start items-end gap-2">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./instagram.png" className="max-h-5 max-w-5" /></a>
+                        <a href="https://x.com/" target="_blank"><img src="./twitter.png" className="max-h-5 max-w-5" /></a>
                         <a href="https://www.youtube.com/@InstinctSpace/" target="_blank"><img src="./youtube.png" className="max-h-6 max-w-6" /></a>
+                        <a href="https://www.linkedin.com/company/instinct-space/" target="_blank"><img src="./linkedin.png" className="max-h-6 max-w-6" /></a>
                     </div>
                 </div>
                 <div className="w-full flex justify-center items-center text-xs">© 2025 Instinct - All right reserved</div>
